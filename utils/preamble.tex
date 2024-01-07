@@ -1,0 +1,141 @@
+\metroset{titleformat=smallcaps,block=fill,numbering=counter,progressbar=frametitle,sectionpage=none}
+\setbeamersize{text margin left=5mm,text margin right=5mm} 
+% \input{embed_video}
+\usepackage{fontspec,minted}
+\usepackage[scale=1]{ccicons}
+\usepackage{metalogo}
+\usepackage{xcolor,colortbl}
+\usepackage{multicol,multirow,booktabs}
+\usepackage{appendixnumberbeamer}
+\usepackage{graphicx}
+\usepackage{mismath}
+\usepackage{bm}
+\usepackage{fontawesome5}
+\usepackage{csquotes}
+%\usepackage[backend=biber, natbib, sorting=nyt, doi=true, url=false, url=false, isbn=false, maxbibnames=10]{biblatex}
+%\addbibresource{../../utils/refs.bib}
+
+\usepackage[spanish, es-nodecimaldot]{babel}
+\deftranslation[to=spanish]{Definition}{Definición}
+\deftranslation[to=spanish]{Theorem}{Teorema}
+\deftranslation[to=spanish]{Example}{Ejemplo}
+
+\usepackage{mathtools, mathrsfs}
+\usefonttheme{professionalfonts}
+\usepackage{textcomp, wasysym}
+
+\setsansfont[BoldFont={Iwona Bold}, Numbers={Lining, Proportional}]{Iwona Light}
+% \setmathsfont(Digits)[Numbers={Lining, Proportional}]{Fira Sans Light}
+\setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}
+
+\setbeamercolor{alerted text}{fg=red,bg=black!2}
+\setbeamercolor{progress bar}{fg=red,bg=red!2}
+\setbeamertemplate{itemize item}{\faCaretRight}
+\setbeamertemplate{itemize subitem}{ \faAngleRight}
+\setbeamertemplate{blocks}[shadow=false]
+\setbeamercolor{block title}{bg=black!30,fg=red}
+\setbeamercolor{block body}{bg=black!20,fg=black}
+\setbeamertemplate{theorem begin}
+{%
+\begin{\inserttheoremblockenv}
+{%
+\inserttheoremheadfont
+%{Teorema:}
+\inserttheoremname
+\ifx\inserttheoremaddition\@empty\else\ : \inserttheoremaddition\fi%
+\inserttheorempunctuation
+}%
+}
+\setbeamertemplate{theorem end}{\end{\inserttheoremblockenv}}
+\makeatother
+
+
+ 
+\usepackage{gensymb,amssymb}
+\usepackage{upquote}
+\usepackage{cancel}
+\usepackage{algpseudocode}
+\algrenewcommand\algorithmicrequire{\textbf{Requiere}}
+\algrenewcommand\algorithmicensure{\textbf{Devuelve}}
+\setbeamertemplate{blocks}[shadow=false]
+
+\newcommand{\cx}{\column{0.5\textwidth}}
+\newcommand{\cw}[1]{\column{#1\textwidth}}
+
+\author{Manuel Carlevaro}
+\date{}
+\institute{
+  \vspace{6em}
+  \centering
+  {\tiny
+  Universidad de Navarra \enspace • \enspace 2024 
+} }
+
+%% Operadores
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\senc}{senc}
+\DeclareMathOperator{\sign}{sign}
+\newcommand{\T}[1]{\underline{\bm{#1}}}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\rg}{rg}
+\DeclareMathOperator{\cond}{cond}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=blue,
+    filecolor=black,
+    linkcolor=blue,
+    urlcolor=blue
+}
+\urlstyle{same}
+
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,shadows,arrows,positioning,matrix,chains,backgrounds,fit}
+
+\tikzset{
+    %Define standard arrow tip
+    >=stealth',
+    %Define style for boxes
+    obj/.style={
+           rectangle,
+           rounded corners,
+           draw, very thick,
+           text width=10em, fill=green!20,
+           minimum height=2em,
+           text centered, drop shadow},
+    proc/.style={
+	    rectangle, rounded corners,
+	    draw,fill=red!50,very thick,
+	    text width=8em,minimum height=2em,
+	    text centered, drop shadow},
+    % Define arrow style
+    pil/.style={
+           ->,
+           thick,
+           shorten <=2pt,
+           shorten >=2pt,}
+}
+
+%\setbeamertemplate{bibliography item}{%
+  %\ifboolexpr{ test {\ifentrytype{book}} or test {\ifentrytype{mvbook}}
+    %or test {\ifentrytype{collection}} or test {\ifentrytype{mvcollection}}
+    %or test {\ifentrytype{reference}} or test {\ifentrytype{mvreference}} }
+    %{\setbeamertemplate{bibliography item}{\faBook}}
+    %{\ifentrytype{online}
+            %{\setbeamertemplate{bibliography item}{\faGlobe}}
+   %{\setbeamertemplate{bibliography item}{\faFileText}}}%
+  %\usebeamertemplate{bibliography item}}
+
+%\defbibenvironment{bibliography}
+  %{\list{}
+     %{\settowidth{\labelwidth}{\usebeamertemplate{bibliography item}}%
+      %\setlength{\leftmargin}{\labelwidth}%
+      %\setlength{\labelsep}{\biblabelsep}%
+      %\addtolength{\leftmargin}{\labelsep}%
+      %\setlength{\itemsep}{\bibitemsep}%
+      %\setlength{\parsep}{\bibparsep}}}
+  %{\endlist}
+  %{\item}
+%\newcommand{\bcite}[1]{\citeauthor{#1}, \citetitle{#1} (\citeyear{#1})}

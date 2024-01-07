@@ -1,0 +1,151 @@
+\documentclass[9pt, aspectratio=169]{beamer}
+
+\usetheme{metropolis}
+\setbeamertemplate{itemize items}{\faAngleRight}
+
+\input{../../utils/preamble}
+
+\title{Introducción a las matemáticas}
+\subtitle{Conjuntos numéricos}
+
+
+\begin{document}
+\maketitle
+
+\begin{frame}{ Objetivos }
+\begin{multicols}{2}
+\begin{itemize}
+    \item Definir conjuntos por extensión y comprensión. Realizar diagramas de Venn. Identificar elementos y subconjuntos a la vez que relaciones de pertenencia e inclusión.
+    \item Realizar operaciones entre conjuntos (unión, intersección y diferencia).
+    \item Identificar los conjuntos numéricos.
+    \item Revisar la conformación de los números reales: números naturales, enteros, racionales e irracionales.
+    \item Conocer la representación del conjunto de los números reales como recta real y los demás conjuntos numéricos.
+\item Revisar cómo se manipulan expresiones algebraicas usando las propiedades conmutativas, asociativas y distributivas de las operaciones.
+\item Conocer el orden de las prioridades de las operaciones algebraicas y el rol de los paréntesis.
+\item Revisar identidades algebraicas importantes que involucran la suma, resta, multiplicación y división.
+\end{itemize}
+\end{multicols}
+\end{frame}
+
+\section{Conjuntos y operaciones entre conjuntos}
+
+\begin{frame}{Conjuntos y operaciones entre conjuntos}
+\begin{definition}[Conjunto]
+        Es una colección o agrupamiento de objetos, cosas, etc. Usualmente se utilizan letras mayúsculas para nombrarlos y llaves $\{\}$ para \textbf{escribirlos encerrando sus elementos}.
+\end{definition} 
+\pause
+
+\begin{example}
+\[ S = \{ \text{domingo}, \text{martes}, \text{lunes}, \text{jueves}, \text{viernes}, \text{sábado}, \text{miércoles} \} \]
+\end{example} \pause
+
+\textbf{Otros ejemplos:}
+\[ A = \{ \text{a}, \text{e}, \text{i}, \text{o}, \text{u} \} \quad B = \{ \text{rojo}, \text{verde}, \text{azul} \} \quad C = \{ \square, \ocircle, \triangle, \diamondsuit, \clubsuit\} \quad  D  = \{1, 2, 3, 4, 5, 6,7 ,8, 9, 0 \}  \]
+\pause
+
+\begin{alertblock}{\centering \faInfoCircle}
+    \begin{itemize}
+        \item \alert{No importa} el orden en que escribimos los elementos de un conjunto.
+        \item Tampoco es importante que aparezcan \alert{elementos repetidos}. Por ejemplo, los siguientes conjuntos son iguales:
+            \[ \{ \text{a}, \text{b}, \text{c} \} = \{ \text{a}, \text{c}, \text{b}, \text{b}, \text{b} \} = \{ \text{b}, \text{a}, \text{c}, \text{a} \} \]
+    \end{itemize}
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{Conjuntos y operaciones entre conjuntos}
+\begin{columns}[t]
+\cw{0.45} 
+Se utiliza el símbolo ``$\in$'' para indicar que cierto elemento \textbf{pertenece} a un conjunto:
+\[ \text{lunes} \in S \]
+Se puede leer como ``lunes pertenece a ``$S$''.
+
+Por otro lado, se utiliza el símbolo ``$\notin$'' para indicar que un elemento \textbf{no pertenece} a un conjunto, por ejemplos:
+\[ \text{enero} \notin S \]
+
+Cuando el conjunto tiene \textbf{muchos elementos}, o una \textbf{cantidad infinita} de elementos, se utilizan los \textbf{tres puntos} ``$\ldots$'':
+\[ \{ \text{a}, \text{b}, \text{c}, \ldots, \text{x}, \text{y}, \text{z} \} \]
+\[ \{0, 1, 2, 3, 4, \ldots \} \]
+\pause
+
+\cw{0.45}
+\textbf{Diagramas de Venn:}
+\vspace{1em}
+
+\begin{center}
+    \includegraphics[width=1.0\textwidth]{figs/fig-01.pdf}
+\end{center}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}{Conjuntos y operaciones entre conjuntos}
+\begin{columns}[t]
+\cw{0.5}
+\begin{definition}[Conjunto vacío]
+El conjunto que \textbf{no tiene elementos} se llama ``\textbf{conjunto vacío}'' y se denota con el símbolo ``$\varnothing$'':
+\[ \varnothing = \{\} \]
+\end{definition}
+
+Con los elementos de un conjunto se pueden formar otros conjuntos ``más pequeños'' que se llaman \textbf{subconjuntos}. Por ejemplo, con $A = \{ \text{a}, \text{e}, \text{i}, \text{o}, \text{u}\}$ se pueden formar varios subconjuntos:
+    \begin{align*}
+        & \{ \text{e}, \text{i}, \text{o} \} \quad \{ \text{a} \} \quad \{ \text{a}, \text{e} \} \quad \{ \text{i}, \text{u} \}\\
+        &\{ \text{i}, \text{o}, \text{u} \} \quad \{ \text{o}, \text{u} \} \quad \{ \text{u}, \text{o}, \text{a}, \text{e} \} \quad \{ \text{o} \}
+    \end{align*}
+En palabras se dice, por ejemplo, que:
+\[ \{ \text{a}, \text{i} \} \txt{es un subconjunto de} \{ \text{a}, \text{e}, \text{i}, \text{o}, \text{u}\} \]
+
+\cw{0.5} o que
+\[ \{ \text{a}, \text{i} \} \txt{está incluido en} \{ \text{a}, \text{e}, \text{i}, \text{o}, \text{u}\} \]
+
+\begin{definition}[$A \subseteq B$]
+Se escribe $A \subseteq B$ cuando \textbf{todos los elementos} del conjunto $A$ también son elementos del conjunto $B$. En cambio, se escribe $A \nsubseteq B$ cuando \textbf{algún elemento} de $A$ no es un elemento del conjunto $B$
+\end{definition}
+\begin{center}
+    \includegraphics[width=1.0\textwidth]{figs/fig-02.pdf}
+\end{center}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}{Conjuntos y operaciones entre conjuntos}
+    Se puede describir a los conjuntos \textbf{por extensión} o \textbf{por comprensión}. Se dice que un conjunto está descripto por extensión cuando hacemos una lista de sus elementos, como en los ejemplos anteriores:
+
+\[ A = \{ \text{a}, \text{e}, \text{i}, \text{o}, \text{u} \} \quad B = \{ \text{rojo}, \text{verde}, \text{azul} \} \quad C = \{ \square, \ocircle, \triangle, \diamondsuit, \clubsuit\} \quad  D  = \{1, 2, 3, 4, 5, 6,7 ,8, 9, 0 \}  \] 
+
+Por otro lado, se dice que un conjunto está descripto por comprensión cuando se utiliza alguna propiedad característica de sus elementos, por ejemplo:
+\[ A = \underbrace{\{ \text{el conjunto de las vocales} \}}_{\text{definición por comprensión}} = \underbrace{ \{ \text{a}, \text{e}, \text{i}, \text{o}, \text{u} \} }_{\text{definición por extensión}} \]
+
+De manera más formal, se utiliza la siguiente notación para definir conjuntos por comprensión:
+\[ A = \{ \underbrace{x \text{ es una letra}}_{\text{conjunto con el que trabajamos}} : \underbrace{x \text{ es una vocal}}_{\text{propiedad que debe cumplirse}} \} \]
+Se lee: ``$A$ es el conjunto de las letras $x$ tal que $x$ es una vocal''. 
+\end{frame}
+
+\begin{frame}{Conjuntos y operaciones entre conjuntos}
+\textbf{Ejemplos:}
+    \begin{center}
+        \begin{tabular}{p{9.5cm} p{4cm}}
+            \toprule
+            \textbf{Definición por comprensión} & \textbf{Definición por extensión} \\
+            \midrule
+            $\{ x : x \text{ es una letra de la palabra ``matemática''} \}$ & $\{$m, a, t, e, i , c$\}$ \\
+            $\{ x : x \text{ es una vocal de la palabra ``matemática''}\}$ & $\{$a, e, i$\}$ \\
+            $\{ x : x \text{ es un Estado miembro de la Unión Europea que empieza con ``F''}\}$ & $\{$Francia, Finlandia$\}$ \\
+            $\{ x : x \text{ es un dígito decimal par}\}$ & $\{0, 2, 4, 6, 8\}$ \\
+            \bottomrule
+        \end{tabular}
+    \end{center}
+
+\vspace{3em}
+\begin{center}
+{\Large \faArrowCircleRight \faPen* Actividad 1}
+\end{center}
+\end{frame}
+
+
+
+
+
+
+
+\end{document}
+
