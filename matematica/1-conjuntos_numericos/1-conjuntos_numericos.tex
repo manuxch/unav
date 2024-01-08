@@ -28,6 +28,7 @@
 \end{frame}
 
 \section{Conjuntos y operaciones entre conjuntos}
+\subsection{Definiciones y relaciones de pertenencia e inclusión}
 
 \begin{frame}{Conjuntos y operaciones entre conjuntos}
 \begin{definition}[Conjunto]
@@ -141,7 +142,105 @@ Se lee: ``$A$ es el conjunto de las letras $x$ tal que $x$ es una vocal''.
 \end{center}
 \end{frame}
 
+\subsection{Operaciones entre conjuntos}
 
+\begin{frame}{Operaciones entre conjuntos}
+\begin{columns}[c]
+\cx
+\begin{definition}[Intersección de conjuntos]
+    La \textbf{intersección} de dos conjuntos es un nuevo conjunto formado por los elementos que están en ambos conjuntos simultáneamente. Considerando $A$ y $B$ dos conjuntos, escribimos la intersección de $A$ y $B$ de la siguiente forma:
+    \[ A \cap B = \{ x : x \in A \text{ y } x \in B \} \]
+\end{definition}
+
+\begin{example}
+    Si $A = \{$a, b, c, g$\}$ y $B = \{$r, g$\}$, entonces:
+    \[ A \cap B = \{\text{g} \} \]
+\end{example}
+
+\cx
+\begin{center}
+    \includegraphics[scale=1.0]{figs/fig-03.pdf}
+\end{center}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Operaciones entre conjuntos}
+\begin{columns}[c]
+\cx
+\begin{definition}[Unión de conjuntos]
+    La \textbf{unión} de dos conjuntos es un nuevo conjunto formado por los elementos que están en uno u otro conjunto. Considerando $A$ y $B$ dos conjuntos, escribimos la unión de $A$ y $B$ de la siguiente forma:
+    \[ A \cup B = \{ x : x \in A \text{ o } x \in B \} \]
+\end{definition}
+
+\begin{example}
+    Si $A = \{$a, b, c, g$\}$ y $B = \{$r, g$\}$, entonces:
+    \[ A \cup B = \{\text{a}, \text{b}, \text{c}, \text{r}, \text{g} \} \]
+\end{example}
+
+\cx
+\begin{center}
+    \includegraphics[scale=1.0]{figs/fig-04.pdf}
+\end{center}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Operaciones entre conjuntos}
+\begin{columns}[c]
+\cx
+\begin{definition}[Diferencia de conjuntos]
+    La \textbf{diferencia} del conjunto $A$ con el conjunto $B$ es un nuevo conjunto formado por todos los elementos de $A$ que no están en $B$. Considerando $A$ y $B$ dos conjuntos, escribimos la diferencia de $A$ con $B$ de la siguiente forma:
+    \[ A - B = \{ x : x \in A \text{ y } x \notin B \} \]
+\end{definition}
+
+\begin{example}
+    Si $A = \{$a, b, c, g$\}$ y $B = \{$r, g$\}$, entonces:
+    \[ A - B = \{\text{a}, \text{b}, \text{c} \} \]
+\end{example}
+
+\cx
+\begin{center}
+    \includegraphics[scale=1.0]{figs/fig-05.pdf}
+\end{center}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Operaciones entre conjuntos}
+\begin{block}{Ejemplo:}
+23 estudiantes de un curso practican alguno de los siguientes deportes: tenis, fútbol y voley. Cuatro de ellas juegan regularmente los tres deportes; 5 juegan solamente voley y fútbol; dos juegan solamente tenis y fútbol; y tres juegan solamente tenis y voley. Además, tres personas juegan únicamente tenis y una persona juega únicamente fútbol. ¿Cuantas personas juegan únicamente voley?
+\vspace{-2.5em}
+\begin{center}
+\[ T = \{\text{estudiantes que juegan tenis}\}; V = \{\text{estudiantes que juegan voley}\}; F = \{\text{estudiantes que juegan fútbol}\} \]
+\end{center}
+\end{block} \pause
+\begin{columns}[c]
+\cw{0.6}
+{\small
+\begin{tabular}{ccc}
+\toprule
+\textbf{Enunciado} & \textbf{Conjunto} & \textbf{\# elementos} \\
+\midrule
+Total de alumnos & $V \cup F \cup T$ & 23 \\
+Alumnos que juegan 3 deportes & $V \cap F \cap T$ & 4 \\
+Alumnos que juegan únicamente voley y fútbol& $(V \cap F) - T$ & 5 \\
+Alumnos que juegan únicamente tenis y fútbol& $(T \cap F) - V$ & 2 \\
+Alumnos que juegan únicamente tenis y voley& $(T \cap V) - F$ & 3 \\
+Alumnos que juegan únicamente tenis& $T - (V \cup F) $ & 3 \\
+Alumnos que juegan únicamente fútbol& $F - (T \cup V) $ & 1 \\
+Alumnos que juegan únicamente voley& $V - (T \cup F) $ & ¿? \\
+\bottomrule
+\end{tabular}
+}
+\cw{0.4}
+\begin{center}
+    \includegraphics[scale=1.0]{figs/fig-06.pdf}
+\end{center}
+\end{columns}
+\pause
+
+\begin{center}
+{\Large \faArrowCircleRight \faPen* Actividad 2}
+\end{center}
+\end{frame}
 
 
 
