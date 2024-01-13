@@ -4,8 +4,18 @@
 \usepackage{multicol,multirow,booktabs}
 \usepackage{graphicx}
 \usepackage{bm}
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 \usepackage{xsim}
+% Definir un nuevo tipo de ejercicio llamado "Pregunta"
+\DeclareExerciseType{pregunta}{
+  exercise-env = pregunta,
+  solution-env = respuesta,
+  exercise-name = Pregunta,
+  solution-name = Respuesta,
+  exercise-template = simple,
+  solution-template = simple,
+}
+
 \usepackage[paper=a4paper, headheight=110pt,showframe=false, 
             layoutvoffset=2em,
             bottom=2cm, top=3.5cm, left=2.5cm, right=2.0cm]{geometry}
@@ -24,6 +34,7 @@
 \usepackage[shortlabels]{enumitem}
 \usepackage{subcaption}
 \usepackage{wrapfig}
+\usepackage{siunitx}
 %\usepackage{mathspec}
 %\usepackage{unicode-math}
 
