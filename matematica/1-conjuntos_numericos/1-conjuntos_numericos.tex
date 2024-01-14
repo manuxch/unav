@@ -97,6 +97,7 @@ En palabras se dice, por ejemplo, que:
 
 \cw{0.5} o que
 \[ \{ \text{a}, \text{i} \} \txt{está incluido en} \{ \text{a}, \text{e}, \text{i}, \text{o}, \text{u}\} \]
+\pause
 
 \begin{definition}[$A \subseteq B$]
 Se escribe $A \subseteq B$ cuando \textbf{todos los elementos} del conjunto $A$ también son elementos del conjunto $B$. En cambio, se escribe $A \nsubseteq B$ cuando \textbf{algún elemento} de $A$ no es un elemento del conjunto $B$
@@ -138,7 +139,7 @@ Se lee: ``$A$ es el conjunto de las letras $x$ \textbf{tal que} $x$ es una vocal
 
 \vspace{3em}
 \begin{center}
-{\Large \faArrowCircleRight \faPen* Actividad 1}
+    {\Large \alert{\faArrowCircleRight \faPen* Actividad 1}}
 \end{center}
 \end{frame}
 
@@ -206,7 +207,7 @@ Se lee: ``$A$ es el conjunto de las letras $x$ \textbf{tal que} $x$ es una vocal
 
 \begin{frame}{Operaciones entre conjuntos}
 \begin{block}{Ejemplo:}
-23 estudiantes de un curso practican alguno de los siguientes deportes: tenis, fútbol y voley. Cuatro de ellas juegan regularmente los tres deportes; 5 juegan solamente voley y fútbol; dos juegan solamente tenis y fútbol; y tres juegan solamente tenis y voley. Además, tres personas juegan únicamente tenis y una persona juega únicamente fútbol. ¿Cuantas personas juegan únicamente voley?
+23 estudiantes de un curso practican alguno de los siguientes deportes: tenis, fútbol y voley. Cuatro de ellas juegan regularmente los tres deportes; cinco juegan solamente voley y fútbol; dos juegan solamente tenis y fútbol; y tres juegan solamente tenis y voley. Además, tres personas juegan únicamente tenis y una persona juega únicamente fútbol. ¿Cuantas personas juegan únicamente voley?
 \vspace{-2.5em}
 \begin{center}
 \[ T = \{\text{estudiantes que juegan tenis}\}; V = \{\text{estudiantes que juegan voley}\}; F = \{\text{estudiantes que juegan fútbol}\} \]
@@ -238,7 +239,7 @@ Alumnos que juegan únicamente voley& $V - (T \cup F) $ & ¿? \\
 \pause
 
 \begin{center}
-{\Large \faArrowCircleRight \faPen* Actividad 2}
+    {\Large \alert{\faArrowCircleRight \faPen* Actividad 2}}
 \end{center}
 \end{frame}
 
@@ -248,14 +249,14 @@ Alumnos que juegan únicamente voley& $V - (T \cup F) $ & ¿? \\
 \begin{columns}[t]
 \cx
 \begin{definition}[Números naturales]
-Utilizamos los \textbf{números naturales} para contar cosas. Denotamos este conjunto con el símbolo $\N$:
-\[ \N = \{0, 1, 2, 3, 4, \ldots \} \]
+    Utilizamos los \textbf{números naturales} para contar cosas. Denotamos este conjunto con el símbolo $\mathbb{N}$:
+\[ \mathbb{N} = \{0, 1, 2, 3, 4, \ldots \} \]
 Consideramos al $0$ como número natural, aunque algunos libros no lo hacen.
 \end{definition}
 \cx
 \begin{definition}[Números enteros]
-Los \textbf{números enteros} están comprendidos por los naturales y sus opuestos. Utilizamos el símbolo $\Z$ para este conjuntos:
-\[ \Z = \{\ldots, -4, -3, -2, -1, 0, 1, 2, 3, 4, \ldots \} \]
+    Los \textbf{números enteros} están comprendidos por los naturales y sus opuestos. Utilizamos el símbolo $\mathbb{Z}$ para este conjuntos:
+\[ \mathbb{Z} = \{\ldots, -4, -3, -2, -1, 0, 1, 2, 3, 4, \ldots \} \]
 \end{definition}
 \end{columns}
 
@@ -271,18 +272,269 @@ Los \textbf{números enteros} están comprendidos por los naturales y sus opuest
 \begin{definition}[Números racionales o fraccionarios]
     Son aquellos números que pueden escribirse como \textbf{cociente} entre dos números enteros:
     \[ \frac{p}{q} = \frac{\text{numerador}}{\text{denominador}} = \frac{\text{número entero}}{\text{número entero } \neq 0} \]
-    Utilizamos el símbolo $\Q$ para denotar este conjunto: 
-    \[ \Q = \{ 0, 1, -3, \frac{1}{3}, \frac{5}{2}, \ldots, -4, 0.3, \ldots, \} \]
+    Utilizamos el símbolo $\mathbb{Q}$ para denotar este conjunto: 
+    \[ \mathbb{Q} = \{ 0, 1, -3, \frac{1}{3}, \frac{5}{2}, \ldots, -4, 0.3, \ldots, \} \]
 \end{definition}
 \cx
 \begin{center}
-    \includegraphics[scale+1.0]{figs/fig-13.pdf}
+    \includesvg[scale=1.0]{figs/fig-13.svg}
 \end{center}
-
-
 \end{columns}
 \end{frame}
 
+\begin{frame}{Conjuntos numéricos}
+    Los números fraccionarios también tienen su representación en \textbf{forma decimal}. En este caso podemos obtener decimales exactos o decimales periódicos (que se van repitiendo indefinidamente):
+    \[ \frac{1}{2} = \underbrace{0.5}_{\text{decimales exactos}} \qquad \frac{2}{3} = \underbrace{0.\hat{6} = 0.66666\ldots}_{\text{decimales periódicos}} \]
+\pause
+
+\textbf{Representación gráfica:} En la representación lineal, en cualquier segmento (sin importar su tamaño) se pueden encontrar números fraccionarios. Entre dos números fraccionarios existen una infinidad de otros números racionales:
+\begin{columns}[c]
+\cw{0.7}
+\begin{center}
+    \includegraphics[width=0.90\textwidth]{figs/racionales.png}
+\end{center}
+\pause
+\cw{0.3}
+¿Se puede completar toda la línea numérica con números racionales? La respuesta es \textbf{negativa}, y se debe a que algunas longitudes o magnitudes no son números racionales, sino \textbf{irracionales}.
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\begin{columns}[t]
+\cx
+\begin{definition}[Números irracionales]
+    Son aquellos números que \textbf{no pueden escribirse} como cociente de dos números enteros. Usamos el símbolo $\mathbb{I}$ para denotar a este conjunto:
+    \[ \mathbb{I} = \{ \sqrt{2}, -\sqrt[3]{5}, \pi, e, \ldots \} \]
+\end{definition}
+
+Al escribir los números racionales en \textbf{forma decimal} siempre obtenemos una expresión con infinitas cifras no periódicas:
+\[ \pi = \underbrace{3.141592654\ldots}_{\text{decimales no periódicos}} \quad \sqrt{2} = \underbrace{1.414213562\ldots}_{\text{decimales no periódicos}} \]
+\pause
+
+\cx
+\begin{definition}[Números reales]
+    Es la unión de los números racionales y los irracionales, conformando la totalidad de los \textbf{números reales} que permiten calcular cualquier longitud posible. Utilizamos el símbolo $\mathbb{R}$ para llamar a este conjunto:
+\[ \mathbb{R} = \{0, -1, \frac{1}{3}, \sqrt{2}, -\sqrt{5}, \pi, \frac{7}{3}, \ldots \} \]
+\end{definition}
+\begin{center}
+    \includegraphics[scale=0.5]{figs/fig-14.pdf}
+\end{center}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Otros conjuntos numéricos}
+\begin{columns}[t]
+\cx
+\begin{definition}[Números pares]
+    Son los \textbf{números enteros divisibles por 2}. En forma simbólica:
+    \[ n = 2 \, p, \quad p \in \mathbb{Z} \]
+\end{definition}
+Cualquier entero que termine en 0, 2, 4, 6 u 8 es un número par:
+\[ \{\ldots, -1240, -238, -156, -2, 0, 2, 4, 16, 88, 12340, \ldots \} \]
+\[ \{ n \in \mathbb{Z} : n = 2 \, p \txt{para algún} p \in \mathbb{Z} \} \]
+\pause
+
+\cx
+\begin{definition}[Números impares]
+    Son los \textbf{números enteros que no divisibles por 2}. En forma simbólica:
+    \[ n = 2 \, p + 1, \quad p \in \mathbb{Z} \]
+\end{definition}
+Cualquier entero que termine en 1, 3, 5, 7 u 9 es un número impar:
+\[ \{\ldots, -12345, 99, -1, 1, 3 17, 23,\ldots \} \]
+\[ \{ n \in \mathbb{Z} : n = 2 \, p + 1 \txt{para algún} p \in \mathbb{Z} \} \]
+\end{columns}
+\end{frame}
+
+\begin{frame}{Otros conjuntos numéricos}
+\begin{columns}[t]
+\cx
+\begin{definition}[Números primos]
+    Son los \textbf{números naturales mayores que 1 divisibles solo por sí mismos y la unidad}.
+\end{definition}
+Los primeros 5 números primos son 2, 3, 5, 7, y 11.
+
+Los números primos pueden ser muy útiles para factorizar números enteros y facilitar las operaciones entre fracciones.
+\pause
+
+\cx
+\begin{definition}[Números compuestos]
+    Son los \textbf{números naturales mayores que 1 que tienen algún divisor natural aparte de sí mismos y el 1}. 
+\end{definition}
+
+Los primeros 5 números compuestos son 4, 6, 8, 9, 10.
+\end{columns}
+\vfill
+\begin{center}
+    {\Large \alert{\faArrowCircleRight \faPen* Actividad 3}}
+\end{center}
+\end{frame}
+
+\section*{Operaciones algebraicas}
+
+\begin{frame}{Operaciones algebraicas}
+    Propiedades de la \textbf{suma} y de la \textbf{multiplicación}: $a$, $b$ y $c$ son números reales.
+
+\begin{center}
+    \begin{tabular}{ccc}
+    \toprule
+    & \textbf{Suma} & \textbf{Multiplicación} \\
+    \midrule
+        Propiedad de cierre & $a + b \in \mathbb{R}$ & $a \mul b \in \mathbb{R}$ \\
+        Propiedad conmutativa & $a + b = b + a$ & $a \mul b = b \mul a$ \\
+        Propiedad asociativa & $(a + b) + c = a + (b + c)$ & $(a \mul b) \mul c = a \mul (b \mul c)$ \\
+        Elemento neutro & $a + 0 = a$ & $a \mul 1 = a$ \\
+        Números opuestos/inversos & $a + (-a) = 0$ & $a \mul a^{-1} = 1, a \neq 0$ \\
+        Propiedad distributiva & \multicolumn{2}{c} {$a \mul (b + c) = a \mul b + a \mul c$} \\
+    \bottomrule
+    \end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Operaciones algebraicas}
+\begin{block}{Notación para el producto}
+    La forma más usual es usando un \textbf{punto en el medio del renglón}, pero también se usa el símbolo $\mul$ y paréntesis:
+    \[ 15 = \underbracket{3 \mul 5}_{\text{usando }\mul} = \overbracket{3 \cdot 5}^{\text{usando } \cdot} = \underbracket{(3)(5) = 3(5) = (3)5}_{\text{usando }()} \]
+Cuando se utilizan letras o variables está permitido no usar símbolos o paréntesis entre medio:
+\[ 3 a = 3 \cdot a \qquad ab = a \cdot b \]
+Sin embargo, \textbf{se evita} usar la escritura anterior cuando se trata de números propiamente dichos para evitar confusión:
+\[ 35 = \text{treinta y cinco} \qquad 35 \stackrel{\textcolor{red}{\text{NO ES}}}= 3 \cdot 5 \]
+\end{block}
+\end{frame}
+
+\begin{frame}{Operaciones algebraicas}
+    \begin{block}{Cambio de precedencia en las operaciones aritméticas}
+        La \textbf{regla principal} cuando usamos \textbf{paréntesis} y/o \textbf{corchetes} es que debe respetarse el orden de las operaciones indicadas siempre desde los más internos y luego avanzando hacia \textbf{afuera}:
+        \[ 3[\underbracket{(3+4)}_{\text{\usym{2780}}} - \underbracket{(2+2)}_{\text{\usym{2780}}}] = 3 \overbracket{[7 -  4] }^{\text{\usym{2781}}} = \underbracket{3 \cdot 3}_{\text{\usym{2782}}} = 9 \]
+    \end{block}
+\end{frame}
+
+\begin{frame}{Operaciones algebraicas}
+    \begin{block}{Resta y división}
+        \vspace{0.3em}
+        \begin{columns}
+            \cw{0.45}
+            \textbf{Resta:} para $a, b \in \mathbb{R}$
+            \[ a - b = a + (-b) \]
+            \cw{0.45}
+            \textbf{División:} para $a, b \in \mathbb{R}, b \neq 0$
+            \[ a \div b = a \mul \frac{1}{b} \]
+        \end{columns}
+    \end{block}
+
+    \begin{block}{Notación}
+Para la división se utilizan varios símbolos o notaciones:
+\[ a \div b \qquad a : b \qquad a/b \qquad \frac{a}{b} \]
+Los símbolos de las operaciones \textbf{nunca se escriben juntos}, se deben usar paréntesis o corchetes:
+\begin{columns}[t]
+    \cw{0.45}
+    \begin{center}
+        Formas correctas
+    \end{center}
+    \[ 3 +(-2) \quad 3 \cdot(-12) \quad -9 \div(-2) \]
+    \cw{0.45}
+    \begin{center}
+        Formas incorrectas
+    \end{center}
+    \[ 3 + -2 \quad 3 \cdot -12  \quad -9 \div -2 \]
+\end{columns}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Operaciones algebraicas}
+    \textbf{Propiedades de la resta (o de los números opuestos):}
+    \begin{itemize}
+        \item Calcular el opuesto es lo mismo que multiplicar por $-1$: $-a = (-1) \cdot a$
+        \item El \textbf{doble} opuesto: $-(-a) = (-1) \cdot (-1) \cdot a = a$
+        \item Números opuestos y multiplicación: $-a \cdot b = -(a \cdot b) = (-a) \cdot b = a \cdot (-b)$
+        \item Números opuestos y fracciones: para $b \neq 0$, 
+            \[ -\frac{a}{b} = \frac{-a}{b} = \frac{a}{-b} \txt{y} \frac{-a}{-b} = \frac{a}{b} \]
+        \item \textbf{Distributiva} de negativo: $-(a + b) = -a - b \txt{y} -(a - b) = -a + b$
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Operaciones algebraicas}
+    \textbf{Propiedades de la división (o de los números inversos):} $a, b, c$ y $d$ son números reales aclarando que cuando corresponda el numerador es diferente de cero.
+\begin{itemize}
+\item \textbf{Suma} de fracciones con \textbf{igual denominador}: es la forma más simple de sumar fracciones porque se considera que se están sumando cantidades de una misma fracción de la unidad (se suman directamente los numeradores):
+    \[ \frac{a}{b} + \frac{c}{b} = a \cdot \frac{1}{b} + c \cdot \frac{1}{b} = (a + c) \cdot \frac{1}{b} = \frac{a + c}{b} \]
+\item \textbf{Suma} de fracciones en general: se buscan \textbf{fracciones equivalentes} que tengan el mismo denominador:
+    \[ \frac{a}{b} + \frac{c}{d} \stackrel{\text{\textcolor{red}{equivalentes}}}{=} \frac{ad}{bd} + \frac{cb}{db} \stackrel{\text{\textcolor{red}{igual denominador}}}{=} \frac{ad + cb}{bd} \]
+\item \textbf{Multiplicación} de fracciones: se calculan multiplicando numeradores entre sí y denominadores entre sí:
+    \[ \frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd} \]
+\item \textbf{División} de fracciones: la segunda función \textbf{se da vuelta} y luego se multiplica: 
+    \[ \frac{a}{b} \div \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c} = \frac{ad}{bc} \]
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Operaciones algebraicas}
+    \textbf{Suma de fracciones usando mínimo común múltiplo:} ejemplos:
+\begin{itemize}
+    \item $1/6 + 2/3 + 4/9$. Los denominadores son 6, 3 y 9 cuyo mínimo común múltiplo es 18. Las fracciones equivalentes son:
+        \[ \frac{1}{6} = \frac{1}{6} \cdot \frac{3}{3} = \frac{3}{18} \qquad \frac{2}{3} = \frac{2}{3} \cdot \frac{6}{6} = \frac{12}{18} \qquad \frac{4}{9} = \frac{4}{9} \cdot \frac{2}{2} = \frac{8}{18} \]
+        Entonces:
+        \[ \frac{1}{6} + \frac{2}{3} + \frac{4}{9} = \frac{3}{18} + \frac{12}{18} + \frac{8}{18} = \frac{3 +12 + 8}{18} = \frac{23}{18} \]
+\item $2 + 5/8 - 5/6$. Los denominadores son 1, 8  y 6, con mínimo común múltiplo 24:
+    \[ 2 + \frac{5}{8} - \frac{5}{6} = \frac{48}{24} + \frac{15}{24} - \frac{20}{24} = \frac{48 + 15 - 20}{24} = \frac{43}{24} \]
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Operaciones algebraicas}
+    \begin{definition}[Potenciación]
+        \begin{itemize}
+            \item Exponente $n \in \mathbb{N} - \{0\}$:
+                \[ a^n = \underbrace{a \cdot a \cdot a \cdot \ldots \cdot a}_{n \text{ veces}} \]
+            \item Caso particular $n = 0$, $a \neq 0$: $a^0 = 1$
+            \item $n = 0$ y $a = 0$ \alert{no está definida matemáticamente}: $0^0$ expresión \textbf{no definida}.
+            \item Para $a \neq 0$ se calculan potencias con números enteros \textbf{negativos}:
+                \[ a^{-n} = \frac{1}{a^n} \]
+        \end{itemize}
+    \end{definition}
+
+\end{frame}
+
+\begin{frame}{Operaciones algebraicas}
+    \textbf{Ejemplos:}
+\begin{multicols}{2}
+\begin{itemize}
+\item $5^3 = 5 \cdot 5 \cdot 5 = 125$
+\item $(-2)^4 = (-2) \cdot (-2) \cdot (-2) \cdot (-2) = 16$
+\item \[\pow{\frac{3}{7}}{2} = \left(\frac{3}{7}\right) \cdot \left(\frac{3}{7}\right) = \frac{9}{49} \]
+\item $x^3 = x \cdot x \cdot x$
+\item $a^1 = a$
+\item \[ \pow{\frac{234}{1354}}{0} = 1 \]
+\item \[ 2^{-3} = \frac{1}{2^3} = \frac{1}{8} \]
+\item \[ (-3)^{-2} = \frac{1}{(-3)^2} = \frac{1}{9} \] 
+\end{itemize}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{Operaciones algebraicas}
+    \textbf{Propiedades de las potencias con exponentes enteros}: $a$ y $b$ son números reales diferentes de cero, $n, m \in \mathbb{Z}$:
+\begin{itemize}
+    \item \textbf{Regla del producto}: producto de potencias de \textbf{igual base}, se \textbf{suman} los exponentes: $a^n \cdot a^m = a^{n+m}$:
+        \[ a^n \cdot a^m = \underbrace{a \cdot \ldots \cdot a}_{n \text{ veces}} \cdot \underbrace{a \cdot \ldots \cdot a}_{m \text{ veces}} = a^{n+m} \]
+    \item \textbf{Distributiva respecto de la multiplicación:} $(a \cdot b)^n = a^n \cdot b^n$:
+        \[ (a \cdot b)^n = \underbrace{(a \cdot b) \cdot \ldots \cdot (a \cdot b)}_{n \text{ veces}} = \underbrace{a \cdot \ldots \cdot a}_{n \text{ veces}} \cdot \underbrace{b \cdot \ldots \cdot b}_{n \text{ veces}} = a^n \cdot b^n \]
+    \item \textbf{Regla del cociente:} en una división de potencias de \textbf{igual base} se \textbf{restan} los exponentes: $a^n/a^m = a^{n-m}$. Para el caso de $n > m$:
+        \[ \frac{a^n}{a^m} = \frac{\overbrace{a \cdot \ldots \cdot a}^{n \text{ veces}}}{\underbrace{a \cdot \ldots \cdot a}_{m \text{ veces}}} = \underbrace{a \cdot \ldots \cdot a}_{n - m \text{ veces}} = a^{n-m}\]
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Operaciones algebraicas}
+    \textbf{Propiedades de las potencias con exponentes enteros}: (continuación)
+\begin{itemize}
+    \item \textbf{Distributiva respecto de la división:} $(a/b)^n = a^n / b^n$:
+        \[ \left(\frac{a}{b}\right)^n = \underbrace{\left(\frac{a}{b}\right) \cdot \ldots \cdot \left(\frac{a}{b}\right)}_{n \text{ veces}}  = \frac{\overbrace{a \cdot \ldots \cdot a}^{n \text{ veces}}}{\underbrace{a \cdot \ldots \cdot a}_{n \text{ veces}}} = \frac{a^n}{b^n} \]
+    \item \textbf{Regla de la potencia:} en una potencia dentro de otra potencia, los exponentes se \textbf{multiplican}: $(a^n)^m = a^{n\cdot m}$
+        \[ (a^n)^m = \underbrace{\underbrace{(a \cdot \ldots \cdots a)}_{n \text{ veces}} \cdot \ldots \cdot \underbrace{(a \cdot \ldots \cdots a)}_{n \text{ veces}}}_{m \text{ veces}} = \underbrace{a \cdot \ldots \cdot a}_{m \cdot n \text{ veces}} = a^{n \cdot m} \]
+    \item \textbf{Regla de la potencia opuesta:} Si la potencia es negativa, la fracción se invierte y se cambia de signo el exponente: 
+        \[ \left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^n \qquad \text{\textcolor{red}{¡Cuidado! }} (-3)^2 = (-3)\cdot(-3) = 9 \neq -3^2 = -(3^2) =  -3 \cdot 3 = -9 \]
+\end{itemize}
+\begin{center}
+    {\Large \alert{\faArrowCircleRight \faPen* Actividad 4}}
+\end{center}
+\end{frame}
 
 \end{document}
 
