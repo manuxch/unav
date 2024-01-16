@@ -1,4 +1,5 @@
 \documentclass[9pt, aspectratio=169]{beamer}
+%\documentclass[9pt, aspectratio=169, handout]{beamer}
 
 \usetheme{metropolis}
 \setbeamertemplate{itemize items}{\faAngleRight}
@@ -531,10 +532,52 @@ Los símbolos de las operaciones \textbf{nunca se escriben juntos}, se deben usa
     \item \textbf{Regla de la potencia opuesta:} Si la potencia es negativa, la fracción se invierte y se cambia de signo el exponente: 
         \[ \left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^n \qquad \text{\textcolor{red}{¡Cuidado! }} (-3)^2 = (-3)\cdot(-3) = 9 \neq -3^2 = -(3^2) =  -3 \cdot 3 = -9 \]
 \end{itemize}
+\end{frame}
+
+\begin{frame}{Operaciones algebraicas}
+\begin{columns}[c]
+\cx 
+\begin{definition}[Radicación]
+Es el proceso de hallar las raíces de orden $n$ de un número $a$. Para números reales:
+\[ \sqrt[n]{a} = x \]
+donde:
+\begin{itemize}
+    \item $n$ es el \textbf{índice} u \textbf{orden}, $a$ es el \textbf{radicando}.
+    \item Según $n$ sea impar o par:
+        \begin{itemize}
+            \item $n$ impar $\mapsto \sqrt[n]{a} = x$ \textbf{raíz enésima}.
+            \item $n$ par $\mapsto \sqrt[n]{a} = \pm x$ \textbf{raíces enésimas}.
+        \end{itemize}
+    \item Si $a < 0$ solo existe la raíz real si $n$ es impar.
+\end{itemize}
+\end{definition}
+\pause
+\begin{alertblock}{\centering \faExclamationTriangle}
+    La raíz cuadrada de los números enteros, si estos no son cuadrados perfectos, son siempre números irracionales.
+\end{alertblock}
+\pause
+\cx 
+\textbf{Propiedades:}
+\begin{multicols}{2}
+    \begin{itemize}
+    \item $ \sqrt[np]{a^p} = \sqrt[n]{a} $
+    \item $ \sqrt[n]{a \cdot b} = \sqrt[n]{a} \cdot \sqrt[n]{b} $
+    \item $\sqrt[n]{\frac{a}{b}} = \frac{\sqrt[n]{a}}{\sqrt[n]{b}}$
+    \item $\left(\sqrt[n]{a}\right)^p = \sqrt[n]{a^p}$
+    \item $\sqrt[m]{\sqrt[n]{a}} = \sqrt[m \cdot n]{a}$
+    \item $\sqrt[m]{a} \cdot \sqrt[n]{a} = \sqrt[m \cdot n]{a^{m + n}}$
+\end{itemize}
+\end{multicols}
+\textbf{Nota:} la raíz enésima de un número se puede poner en forma de potencia:
+\[ \sqrt[n]{a} = a^{1/n} \] 
+ya que
+\[ (\sqrt[n]{a})^n = a \txt{y} (a^{1/n})^n = a^{n/n} = a \]
+
+\vfill
 \begin{center}
     {\Large \alert{\faArrowCircleRight \faPen* Actividad 4}}
 \end{center}
+\end{columns}
 \end{frame}
-
 \end{document}
 
