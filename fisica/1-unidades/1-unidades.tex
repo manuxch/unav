@@ -107,7 +107,7 @@
     \toprule
     \textbf{Prefijo} &\textbf{Símbolo} & \textbf{Exponente} & & \textbf{Prefijo} & \textbf{Símbolo} & \textbf{Potencia} \\
     \midrule
-      quecto & \unit{\quecto\nada} & \num{d-30} & & deca & \unit{\deca\nada} &   1 \\
+    quecto & \unit{\quecto\nada} & \num{d-30} & & deca & \unit{\deca\nada} &   \num{d1} \\
       ronto & \unit{\ronto\nada}  & \num{d-27} &  & hecto & \unit{\hecto\nada}  &  \num{d2} \\
       yocto & \unit{\yocto\nada}  & \num{d-24} &  & kilo & \unit{\kilo\nada}  &  \num{d3} \\
       zepto & \unit{\zepto\nada}  & \num{d-21} &  & mega & \unit{\mega\nada}  &  \num{d6} \\
@@ -183,7 +183,7 @@ El gramo (g) no se considera una unidad fundamental de masa, pero se usa para de
 \begin{example}[Conversión de unidades de rapidez] 
 La Estación Espacial Internacional (ISS) orbita la Tierra a una altura de aproximadamente \qty{420}{km} a una velocidad de \qty{27600}{km/h}. Expresar esa rapidez en \unit{m/s}.
 \pause
-\[ \qty{27600}{km/h} = \left(\num{27600} \times 10^3 \frac{\unit{m}}{\unit{h}}\right) \left(\frac{\qty{1}{h}}{\qty{3600}{s}}\right) = \qty{7666.666}{m/s} \] 
+\[ \qty{27600}{km/h} = \num{27600}\frac{\cancel{\unit{km}}}{\cancel{\unit{h}}} \left(\num{d3} \frac{\unit{m}}{\cancel{\unit{km}}}\right) \left(\frac{\cancel{\unit{h}}}{\qty{3600}{s}}\right) = \qty{7666.666}{m/s} \] 
 \end{example}
 \pause
 \begin{example}[Conversión de unidades de volumen]
