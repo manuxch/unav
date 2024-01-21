@@ -1,0 +1,45 @@
+\providecommand\numberofexercises{}
+\providecommand\numberofpreguntas{}
+\XSIM{solution-body}{}
+\XSIM{exercise-body}{exercise-1=={\begin {multicols}{2} \begin {center} \includegraphics [scale=0.35]{figs/ruta.png} \end {center} \begin {enumerate}[a)] \item Una persona conduce su coche por la ruta de la figura. Determine la magnitud y la dirección del desplazamiento resultante dibujando un diagrama a escala (la figura no está a escala). \item Utilice el método de las componentes para hallar la resultante de los desplazamientos de la parte a). \end {enumerate} \end {multicols}}||exercise-2=={\begin {multicols}{2} \begin {center} \includegraphics [scale=0.85]{figs/fig-08.pdf} \end {center} \par Dados los vectores de la figura, halle: \begin {enumerate}[a)] \item Las componentes de cada vector. \item Las sumas y restas $\vect {a} + \vect {b}$, $\vect {b} + \vect {a}$, $\vect {a} - \vect {b}$, $\vect {b} - \vect {a}$. \item Los productos escalares $\vect {a} \cdot \vect {b}$, $\vect {b} \cdot \vect {c}$ y $\vect {a} \cdot \vect {c}$. \item Los productos vectoriales $\vect {a} \mul \vect {d}$ y $\vect {d} \mul \vect {a}$. \end {enumerate} \end {multicols}}||exercise-3=={Calcule el ángulo entre los vectores $\vect {a} = -2 \hat {\bm {i}} + 6 \hat {\bm {j}}$ y $\vect {b} = 2 \hat {\bm {i}} - 3 \hat {\bm {j}}$.}||exercise-4=={Resuelva el ejercicio anterior agregando la tercera dimensión (con componentes nulas) y usando el producto vectorial.}||exercise-5=={\begin {multicols}{2} \includegraphics [scale=0.90]{figs/fig-09.pdf} \par Decimos que un objeto está en equilibrio cuando todas las fuerzas sobre él se estabilizan (suman cero). La figura muestra una viga que pesa \qty {124}{N} y que está apoyada en equilibrio por una fuerza de \qty {100}{N} y una fuerza $\vect {F}$ en el piso. La tercera fuerza sobre la viga es el peso de \qty {124}{N} que actúa verticalmente hacia abajo. \begin {enumerate}[a)] \item Utilice componentes de vectores para encontrar la magnitud y la dirección de $\vect {F}$. \item Verifique lo razonable de su respuesta en el inciso a) haciendo una solución gráfica aproximadamente a escala. \end {enumerate} \end {multicols}}||exercise-6=={En la molécula de metano, CH$_4$, cada átomo de hidrógeno está en la esquina de un tetraedro regular, con el átomo de carbono en el centro. En coordenadas en las que uno de los enlaces C--H esté en la dirección $\hat {\bm {i}} + \hat {\bm {j}} +\hat {\bm {k}}$, un enlace C--H adyacente está en la dirección $\hat {\bm {i}} - \hat {\bm {j}} -\hat {\bm {k}}$. Calcule el ángulo entre dos enlaces.}}
+\XSIM{goal}{exercise}{points}{0}
+\XSIM{goal}{pregunta}{points}{0}
+\XSIM{totalgoal}{points}{0}
+\XSIM{goal}{exercise}{bonus-points}{0}
+\XSIM{goal}{pregunta}{bonus-points}{0}
+\XSIM{totalgoal}{bonus-points}{0}
+\XSIM{order}{1||2||3||4||5||6}
+\XSIM{use}{}
+\XSIM{use!}{}
+\XSIM{used}{exercise-1=={true}||exercise-2=={true}||exercise-3=={true}||exercise-4=={true}||exercise-5=={true}||exercise-6=={true}}
+\XSIM{print}{}
+\XSIM{print!}{}
+\XSIM{printed}{exercise-1=={true}||exercise-2=={true}||exercise-3=={true}||exercise-4=={true}||exercise-5=={true}||exercise-6=={true}}
+\XSIM{total-number}{6}
+\XSIM{exercise}{6}
+\XSIM{pregunta}{0}
+\XSIM{types}{exercise||pregunta}
+\XSIM{idtypes}{1=={exercise}||2=={exercise}||3=={exercise}||4=={exercise}||5=={exercise}||6=={exercise}}
+\XSIM{collections}{exercise-1=={all exercises}||exercise-2=={all exercises}||exercise-3=={all exercises}||exercise-4=={all exercises}||exercise-5=={all exercises}||exercise-6=={all exercises}}
+\XSIM{collection:all exercises}{exercise-1||exercise-2||exercise-3||exercise-4||exercise-5||exercise-6}
+\setcounter{totalexerciseinall exercises}{6}
+\setcounter{totalpreguntainall exercises}{0}
+\XSIM{id}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}||exercise-4=={4}||exercise-5=={5}||exercise-6=={6}}
+\XSIM{ID}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}||exercise-4=={4}||exercise-5=={5}||exercise-6=={6}}
+\XSIM{counter}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}||exercise-4=={4}||exercise-5=={5}||exercise-6=={6}}
+\XSIM{counter-value}{exercise-1=={1}||exercise-2=={2}||exercise-3=={3}||exercise-4=={4}||exercise-5=={5}||exercise-6=={6}}
+\XSIM{solution}{}
+\XSIM{section-value}{exercise-1=={0}||exercise-2=={0}||exercise-3=={0}||exercise-4=={0}||exercise-5=={0}||exercise-6=={0}}
+\XSIM{section}{exercise-1=={0}||exercise-2=={0}||exercise-3=={0}||exercise-4=={0}||exercise-5=={0}||exercise-6=={0}}
+\XSIM{sectioning}{exercise-1=={{0}{0}{0}{0}{0}}||exercise-2=={{0}{0}{0}{0}{0}}||exercise-3=={{0}{0}{0}{0}{0}}||exercise-4=={{0}{0}{0}{0}{0}}||exercise-5=={{0}{0}{0}{0}{0}}||exercise-6=={{0}{0}{0}{0}{0}}}
+\XSIM{subtitle}{}
+\XSIM{points}{}
+\XSIM{bonus-points}{}
+\XSIM{page-value}{exercise-1=={1}||exercise-2=={1}||exercise-3=={1}||exercise-4=={1}||exercise-5=={1}||exercise-6=={2}}
+\XSIM{page}{exercise-1=={1}||exercise-2=={1}||exercise-3=={1}||exercise-4=={1}||exercise-5=={1}||exercise-6=={2}}
+\XSIM{tags}{}
+\XSIM{topics}{}
+\XSIM{userpoints}{}
+\XSIM{bodypoints}{}
+\XSIM{userbonus-points}{}
+\XSIM{bodybonus-points}{}
